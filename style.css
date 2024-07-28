@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/* 配色は次を参考 https://nipponcolors.com/ */
+
+/* 全体設定 */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(img/background.jpg);
+  /* background-color: rgba(217, 205, 144, 100); */
+  /* background-color: #D9CD90 ; 蒸栗 */
+  color: #1C1C1C; /* 墨 */
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* ブラウザの規定スタイルのリセット */
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* headerの設定 */
+
+header {
+  width: 960px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+/* 本文の設定 */
+
+#wrap {
+  clear: both;
+}
+
+.contents {
+  width: 1080px;
+  height: 960px;
+  margin: 0 auto;
+}
+
+.navigation {
+  list-style: none;
+}
+
+.navigation li {
+  float: left;
+  margin: 0 20px;
+  font-size: 30px;
+}
+
+a {
+  color: #554236; /* 黒鳶 */
+}
+
+.btn a {
+  font-size: 24px;
+  font-family: 'Kaisei Opti';
+  color: #554236; /* 黒鳶 */
+  background-color: #FBE251; /* 黄蘗 */
+  text-decoration: none;  
+  width: 160px;
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 3px solid #FBE251;
+}
+
+.btn a:hover {
+  text-decoration: none;
+  background-color: #554236; /* 黒鳶 */
+  color: #FBE251; /* 黄蘗 */
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.name a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 24px;
+  color: #005CAF; /* 瑠璃 */
+  padding-left: 18px;
+  border-left: 15px solid #005CAF;
+  border-bottom: 1px solid #005CAF; 
+}
+
+h2 {
+  font-size: 18px;
+  color: #005CAF; /* 瑠璃 */
+  margin-left: 18pt;
+  padding-left: 18px;
+  border-left: 8px solid #005CAF;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+/* footerの設定 */
+
+footer {
+  text-align: center;
+  color: #1C1C1C;
+  padding: 20px 0;
+}
+
+footer small {
+  font-size: 12px;
+}
+
+/* indexページの設定 */
+#index .name {
+  margin-top: 20px;
+  font-size: 48px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Kaisei Decol';
+}
+
+.language {
+  float: right;
+}
+
+.introduction {
+  float: left;
+  width: 350px;
+  margin: 20px 30px;
+}
+
+#index .photo {
+  float: left;
+  margin: 20pt;
+  width: 530px;
+}
+
+#index .pages_button {
+  padding: 0px 120px;
+}
+
+#index .pages_button_en {
+  padding: 0px 230px;
+}
+
+/* papersページの設定 */
+#papers .name {
+  margin: 26px 5px;
+  font-size: 24px;
+  font-family: 'Kaisei Decol';
+  float: left;
+}
+
+#papers .navigation {
+  float: right;
+}
+
+#papers .navigation li {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+
+#papers .navigation li:last-child {
+  margin-right: 0;
+}
+
+#papers .btn a {
+  font-size: 22px;
+  width: 150px;
+  line-height: 50px;
+}
+
+
+/* eduページの設定 */
+#papers .unorder_list {
+  margin-left: 18px;
+  list-style: none;
+}

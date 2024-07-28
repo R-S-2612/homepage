@@ -1,102 +1,101 @@
 <!DOCTYPE html>
-<html>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CGT8ZQ8DMN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CGT8ZQ8DMN');
-</script>
-
-<!-- Password tag -->
-<script type="text/javascript">
-   function gate() {
-      var UserInput = prompt("パスワードを入力して下さい:","");
-      location.href = UserInput + ".html";
-   }
-</script>
-
-<!-- MathJax tag -->
-<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-  // 文章中では \( \)で数式モードになることに注意
-</script>
-
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>教育関係 - 椎井のページ</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>教育 | 椎井 亮太</title>
+  <link rel="stylesheet" href="style.css">
+  <html lang="ja">
+
+  <!-- フォント -->
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+
+  <!-- MathJaxによるTeXソースの表示 -->
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    // \( \)でインライン数式モード
+    // \[ \]でalign環境
+  </script>  
+
+  <!-- Password tag -->
+  <script type="text/javascript">
+    function gate() {
+      var UserInput = prompt("パスワードを入力して下さい:","");
+      location.href = UserInput + ".html";
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGT8ZQ8DMN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CGT8ZQ8DMN');
+  </script>
 </head>
 
-<body>
-  <div class="header">
-    <h1 class="header-title">教育関係</h1>
-    <div class="language">
-      last update: <time datetime="2023-04-29">2024-04-24</time>
+<body id="papers">
+  <header>
+    <div class="name">
+      <a href="index_jp.html">椎井 亮太 / Ryota Shii</a>
     </div>
-  </div>
+    <nav>
+      <ul class="navigation">
+        <li><p class="btn"><a href="papers_jp.html">論文/講演</a></p></li>
+        <li><p class="btn"><a href="cv_jp.html">経歴</a></p></li>
+        <li><p class="btn"><a href="edu_jp.html">教育</a></p></li>
+        <li><p class="btn"><a href="link_jp.html">その他</a></p></li>
+      </ul>
+    </nav>
+  </header>
 
-
-  <div class="main">
-    <div class="list-title">
-      2024年度
-    </div>
-    <ul class="list-item">
-      <li>
-        <a href="#", onclick="gate()">リメディアル数学</a> (福岡大, 工学部システム化学科1年, 前期水曜5限)
-      </li>
-    </ul>
-    <div class="list-title">
-      2023年度
-    </div>
-    <ul class="list-item">
-      <li>
-        <a href="#", onclick="gate()">リメディアル数学</a> (福岡大, 工学部システム化学科1年, 前期水曜5限)
-      </li>
-      <li>
-        数学概論II・演習: TA (九州大, 理学部数学科2年, 前期木曜3限)
-      </li>
-      <li>
-        <a href="#", onclick="gate()">技術者リテラシー I</a> (福岡大, 工学部機械工学科1年, 後期水曜4限)
-      </li>
-    </ul>
- 
-    <div class="list-title">
-      2022年度
-    </div>
-    <ul>
-      <li>
-        <font size="3"> コアセミナー: TA (九州大, 理学部数学科1年, 前期火曜3限) </font>
-        <ul style="list-style-type: circle;">
-          <li>指定本:T. Gowers, Mathematics: A Very Short Introduction, Oxford Univ. Pr. (2002)</li>
+  <div id="wrap">
+    <div class="contents">
+      <section>
+        <h1>2024年度</h1>
+        <ul class="unorder_list">
+          <li><p><a href="#", onclick="gate()">リメディアル数学</a> (福岡大, 工学部システム化学科1年, 前期水曜5限)</p></li>    
         </ul>
-      </li>
-      <li>
-        <font size="3"> 代数学II・演習: TA (九州大, 理学部数学科3年, 後期金曜3限)</font>
-      </li>
-    </ul>
+      </section>
 
-    <div class="list-title">
-      2021年度
-    </div>
-    <ul>
-      <li>
-        <font size="3"> 代数学II・演習: TA (九州大, 理学部数学科3年, 後期金曜3限)</font>
-      </li>
-    </ul>    
+      <section>
+        <h1>2023年度</h1>
+        <ul class="unorder_list">
+          <li><p><a href="#", onclick="gate()">リメディアル数学</a> (福岡大, 工学部システム化学科1年, 前期水曜5限)</p></li>
+          <li><p>数学概論II・演習: TA (九州大, 理学部数学科2年, 前期木曜3限)</p></li>
+          <li><p><a href="#", onclick="gate()">技術者リテラシー I</a> (福岡大, 工学部機械工学科1年, 後期水曜4限)</p></li>    
+        </ul>
+      </section>
 
-    <div class="list-title">
-      2021年度
+      <section>
+        <h1>2022年度</h1>
+        <ul class="unorder_list">
+          <li><p>コアセミナー: TA (九州大, 理学部数学科1年, 前期火曜3限)<br>
+            指定本: T. Gowers, Mathematics: A Very Short Introduction, Oxford Univ. Pr. (2002)
+          </p></li>
+          <li><p>代数学II・演習: TA (九州大, 理学部数学科3年, 後期金曜3限)</p></li>
+        </ul>
+      </section>
+
+      <section>
+        <h1>2021年度</h1>
+        <ul class="unorder_list">
+          <li><p>代数学II・演習: TA (九州大, 理学部数学科3年, 後期金曜3限)</p></li>
+        </ul>
+      </section>
+
+      <section>
+        <h1>2020年度</h1>
+        <ul class="unorder_list">
+          <li><p>代数学II・演習: TA (九州大, 理学部数学科3年, 後期金曜3限)</p></li>
+        </ul>
+      </section>
     </div>
-    <ul>
-      <li>
-        <font size="3"> 代数学II・演習: TA (九州大, 理学部数学科3年, 後期金曜3限)</font>
-      </li>
-    </ul>    
   </div>
+
+  <footer>
+    <small>&copy;2024 Ryota Shii </small>
+  </footer>
 
 </body>
 
