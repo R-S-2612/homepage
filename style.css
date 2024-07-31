@@ -33,7 +33,7 @@ ul {
 /* headerの設定 */
 
 header {
-  width: 960px;
+  width: 1080px;
   height: 120px;
   margin: 0 auto;
 }
@@ -162,7 +162,7 @@ footer small {
 
 /* papersページの設定 */
 #papers .name {
-  margin: 26px 5px;
+  margin: 26px 65px;
   font-size: 24px;
   font-family: 'Kaisei Decol';
   float: left;
