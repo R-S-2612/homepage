@@ -2,6 +2,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="keyword" content="Ryota Shii, Shii, 椎井 亮太, 椎井, math, 数学, Iwasawa Theory, 岩澤理論, 楕円曲線, Zhao's method" />
   <title>椎井 亮太のページ</title>
   <link rel="stylesheet" href="style.css">
@@ -10,11 +11,24 @@
   <!-- フォント -->
   <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
   <!-- MathJaxによるTeXソースの表示 -->
   <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
     // \( \)でインライン数式モード
     // \[ \]でalign環境
+  </script>
+
+  <!-- 開閉のやつ -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    $(function(){
+      //クリックで動く
+      $('.nav-open').click(function(){
+        $(this).toggleClass('active');
+        $(this).next('nav').slideToggle();
+      });
+    });
   </script>
 </head>
 
@@ -23,7 +37,8 @@
 <header>
   <div class="name">
     <a href="index_jp.html">椎井 亮太 / Ryota Shii</a>
-  </div>
+  </div>  
+
   <div class="language">
     <p>日本語 / <a href="index_en.html">English</a></p>
   </div>
@@ -58,6 +73,7 @@
           num = 1; // 写真の枚数
           r = Math.floor(Math.random() * num);
           const scr = [
+            // 'どれだけの文字数が打てるのでしょうか。<br>これはテストです。',
             '趣味のルービックキューブ',
           ]
           document.write('<img src="img/main-photo'+r+'.png" alt=読み込み失敗...">');
