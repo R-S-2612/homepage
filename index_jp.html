@@ -8,18 +8,12 @@
   <link rel="stylesheet" href="style.css">
   <html lang="ja">
   
-  <!-- フォント -->
   <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- MathJaxによるTeXソースの表示 -->
-  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-    // \( \)でインライン数式モード
-    // \[ \]でalign環境
-  </script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
-  <!-- 開閉のやつ -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>
     $(function(){
@@ -67,13 +61,11 @@
         <address>shii.ryota "at" gmail.com</address> 
       </div>
 
-      <!-- 幅530px -->
       <div class="photo">  
         <script>
-          num = 1; // 写真の枚数
+          num = 1;
           r = Math.floor(Math.random() * num);
           const scr = [
-            // 'どれだけの文字数が打てるのでしょうか。<br>これはテストです。',
             '趣味のルービックキューブ',
           ]
           document.write('<img src="img/main-photo'+r+'.png" alt=読み込み失敗...">');
