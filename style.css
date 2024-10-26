@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(img/background.jpg);
+  /* background-color: #D9CD90 ; 蒸栗 */
   color: #1C1C1C; /* 墨 */
   font-family: 'Noto Sans JP';
   font-size: 16px;
@@ -197,9 +198,17 @@ footer small {
   list-style: none;
 }
 
+/* 404ページの設定 */
+.NF {
+  color: #1C1C1C; /* 墨 */
+  font-size: 24px;
+  text-align: center;
+}
 
 
 
+
+/* 画面サイズが600px以下の場合は次を適用 */
 @media screen and (max-width:600px) {
 body {
   font-size: 3.5vw;
@@ -308,10 +317,12 @@ img {
   display: block;
 }
 
+/* Navbar & Navmenu color */
 :root {
   --background-navbar: rgba(85, 66, 54, 0.95); /* 黒鳶 */
 }
 
+/* Nav items */
 .menu {
   list-style: none;
   text-align: center;
@@ -329,12 +340,14 @@ img {
   transform-origin: top;
 }
 
+/* Hamburger menu button */
 .menu-btn:checked ~ .menu {
   transform: scale(1, 1);
   transform-origin: top;
   transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
 }
 
+/* Hamburger menu text */
 .menu a {
   text-decoration: none;
   letter-spacing: 0.5vw;
@@ -421,7 +434,9 @@ img {
   background: rgba(0, 0, 0, 0);
   transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
 }
+/* Hamburger Menu Animation End */
 
+/* Navbar Text */
 .navtext {
   position: absolute;
   text-transform: uppercase;
