@@ -2,20 +2,15 @@
 
 /* 配色は次を参考 https://nipponcolors.com/ */
 
-/* 全体設定 */
-
 body {
   margin: 0;
   padding: 0;
   background-image: url(img/background.jpg);
-  /* background-color: #D9CD90 ; 蒸栗 */
   color: #1C1C1C; /* 墨 */
   font-family: 'Noto Sans JP';
   font-size: 16px;
   line-height: 1.8;
 }
-
-/* ブラウザの規定スタイルのリセット */
 
 p, h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -30,15 +25,11 @@ ul {
   padding: 0;
 }
 
-/* headerの設定 */
-
 header {
   width: 1080px;
   height: 120px;
   margin: 0 auto;
 }
-
-/* 全体的な設定 */
 
 #wrap {
   clear: both;
@@ -115,8 +106,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* footerの設定 */
-
 footer {
   text-align: center;
   color: #1C1C1C;
@@ -127,7 +116,6 @@ footer small {
   font-size: 12px;
 }
 
-/* indexページの設定 */
 #index .name {
   margin-top: 20px;
   font-size: 48px;
@@ -160,7 +148,6 @@ footer small {
   padding: 0px 230px;
 }
 
-/* papersページの設定 */
 #papers .name {
   margin: 26px 65px;
   font-size: 24px;
@@ -192,13 +179,11 @@ footer small {
 }
 
 
-/* eduページの設定 */
 #papers .unorder_list {
   margin-left: 18px;
   list-style: none;
 }
 
-/* 404ページの設定 */
 .NF {
   color: #1C1C1C; /* 墨 */
   font-size: 24px;
@@ -208,7 +193,6 @@ footer small {
 
 
 
-/* 画面サイズが600px以下の場合は次を適用 */
 @media screen and (max-width:600px) {
 body {
   font-size: 3.5vw;
@@ -296,7 +280,6 @@ img {
   margin: 0px 5%;
 }
 
-/* papersページの設定 */
 #papers header {
   height: auto;
 }
@@ -317,12 +300,10 @@ img {
   display: block;
 }
 
-/* Navbar & Navmenu color */
 :root {
   --background-navbar: rgba(85, 66, 54, 0.95); /* 黒鳶 */
 }
 
-/* Nav items */
 .menu {
   list-style: none;
   text-align: center;
@@ -340,14 +321,12 @@ img {
   transform-origin: top;
 }
 
-/* Hamburger menu button */
 .menu-btn:checked ~ .menu {
   transform: scale(1, 1);
   transform-origin: top;
   transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
 }
 
-/* Hamburger menu text */
 .menu a {
   text-decoration: none;
   letter-spacing: 0.5vw;
@@ -414,7 +393,6 @@ img {
   bottom: 2vw;
 }
 
-/* Hamburger Menu Animation Start */
 .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
@@ -434,9 +412,7 @@ img {
   background: rgba(0, 0, 0, 0);
   transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
 }
-/* Hamburger Menu Animation End */
 
-/* Navbar Text */
 .navtext {
   position: absolute;
   text-transform: uppercase;
